@@ -1,0 +1,233 @@
+:root {
+  --purple: #191931;
+  --white: #eff5ef;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ---------- HERO SECTION ---------- */
+
+.hero-section {
+  background-color: var(--purple);
+  color: var(--white);
+  display: flex;
+  min-height: 80vh;
+  padding: 60px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.about-image{
+    margin-left: -10px;
+    margin-right: 20px;
+}
+
+.about-image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 30px rgba(255,255,255,0.25);
+    transition: 0.3s ease;
+}
+
+.about-image img:hover{
+    transform: scale(1.03);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  flex-basis: 250px;
+}
+
+.ui-text,
+.designer-text {
+  font-weight: 900;
+  font-size: 7rem;
+  line-height: 1;
+  margin: 10;
+  letter-spacing: -0.00em;
+  user-select: none;
+  color: var(--white);
+}
+
+.designer-text {
+  margin-top: -15px;
+}
+
+.name-text {
+  font-size: 2.6rem;
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 1px 35px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.right-side {
+  flex: 1 1 450px;
+  max-width: 880px;
+  background-image: url('images/ProfileImage.jpeg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 65px auto;
+  padding-left: 20px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.section-block {
+  margin-bottom: 48px;
+}
+
+.section-block h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.section-block p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #eee;
+  font-weight: normal;
+}
+
+/* ---------- MY DESIGNS SECTION ---------- */
+
+.image-wrapper {
+    width: 100%;
+    height: 420px;
+  /*aspect-ratio: 4 / 3;*/
+  overflow: hidden;
+  padding:50px;
+}
+
+.image-wrapper img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border: hsl(0, 0%, 7%) solid 5px;
+  border-radius: 0.5rem;
+}
+
+.design-card:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+
+.design-card{
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 1px solid #d9d9d9;
+    background: white;
+    min-height: 600px;
+    width: 100%;
+}
+
+
+.design-card.card {
+    border: 1px solid #d9d9d9 !important;
+    min-height: 700px;
+    width: 100%;
+}
+
+.design-card .image-wrapper {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.card-title {
+  background-color: var(--purple);
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 100;
+  font-size: 1.8rem;
+  line-height: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+
+}
+.card-body {
+  padding: 25px;
+  text-align: center;
+}
+
+h2.mb-5 {
+  color: var(--purple);
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .left-side {
+    flex-basis: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .right-side {
+    background-position: top center;
+    background-size: 30px;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .ui-text {
+    font-size: 4.5rem;
+  }
+
+  .designer-text {
+    font-size: 3rem;
+    margin-top: -10px;
+  }
+
+  .name-text {
+    font-size: 2.4rem;
+    margin-top: 30px;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+    background-color: #0d0d2b;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-top: 2px solid rgba(255,255,255,0.15);
+     font-family: 'Arial', sans-serif;
+}
+
+.footer p{
+    margin: 0;
+}

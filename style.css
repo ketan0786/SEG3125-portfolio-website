@@ -212,6 +212,14 @@ h2.mb-5 {
     font-size: 2.4rem;
     margin-top: 30px;
   }
+  @media (max-width: 768px){
+
+    .about-image img{
+        width: 250px;
+        height: 250px;
+    }
+
+}
 }
 
 /* ---------- FOOTER ---------- */

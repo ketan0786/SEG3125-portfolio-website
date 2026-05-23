@@ -126,7 +126,7 @@ body {
 .design-card:hover .image-wrapper img {
   transform: scale(1.05);
 }
-
+/*
 .design-card{
     border-radius: 5px;
     overflow: hidden;
@@ -136,6 +136,7 @@ body {
     min-height: 600px;
     width: 100%;
 }
+*/
 
 
 .design-card.card {
